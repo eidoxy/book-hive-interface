@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Book Hive</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body class=" h-screen">
+    <header class="bg-white w-f shadow">
+        <nav class="flex justify-between items-center w-full  px-10 py-3">
+            <div class="flex">
+                <header class="font-bold text-yellow-700 text-2xl">BOOK </header>
+                <header class="font-bold text-yellow-400 text-2xl">HIVE </header>
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Categories</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="bg-yellow-700 text-white px-8 py-2.5 rounded-lg hover:bg-orange-400">Login</button>
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-4xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+    <section class="bg-gray-50">
+        <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+        <div class="mx-auto max-w-lg text-center">
+            <h2 class="font-serif text-7xl font-bold text-gray-900 md:text-5xl">
+                Find Your Own Book
+            </h2>
+    
+            <p class="hidden text-gray-500 sm:mt-4 sm:block">
+                We provide many jobs that you dreaming it, find your job according to your expertise to make it easier to find a job
+            </p>
+        </div>
+    
+        <div class="mx-auto mt-8 max-w-xl">
+            <form action="#" class="sm:flex sm:gap-4">
+            <div class="sm:flex-1">
+                <label for="email" class="sr-only">search</label>
+    
+                <input
+                type="search"
+                placeholder="Search Books, Authors, or Categories"
+                class="w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-400"
+                />
+            </div>
+    
+            <button
+                type="submit"
+                class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-yellow-700 px-8 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-400 sm:mt-0 sm:w-auto"
+            >
+                <span class="text-sm font-medium"> Search </span>
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+                </svg>
+            </button>
+            </form>
+        </div>
+        </div>
+    </section>
+    <header class="bg-white">
+  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between">
+      <div class="flex-1 md:flex md:items-center md:gap-12">
+        <a class="block text-teal-600" href="#">
+          <span class="sr-only">Home</span>
+          <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+          </svg>
+        </a>
+      </div>
+
+      <div class="md:flex md:items-center md:gap-12">
+        <nav aria-label="Global" class="hidden md:block">
+          <ul class="flex items-center gap-28 text-sm">
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Filter </a>
+            </li>
+
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Comic </a>
+            </li>
+
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Education </a>
+            </li>
+
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Journal </a>
+            </li>
+
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Novel </a>
+            </li>
+
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Subject </a>
+            </li>
+
+            <li>
+               <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> International Book </a>
+            </li>
+
+            <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Sport </a>
+             </li>
+          </ul>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <div class="block md:hidden">
+            <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+
+</html>
