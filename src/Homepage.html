@@ -12,7 +12,8 @@
         rel="stylesheet">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
-<body class="bg-orange-100 h-screen">
+<body class="bg-orange-100">
+    <!-- Header start -->
     <!-- Navbar -->
     <header class="mt-4 mb-24">
         <nav class="flex justify-between items-center w-full  px-10 py-3">
@@ -55,48 +56,40 @@
     </header>
     <!-- Header ends -->
 
-    <!--Section 1-->
-    <main class="mt-8 mb-24 flex-auto">
-    <div style="height: 900px; width: 1240px;" class="grid grid-cols-2 mt-20 ml-24 w-96 h-96 relative bg-gradient-to-r from-orange-500 to-amber-200 rounded-2xl shadow">
-        <div>
-            <img src="Tere Liye.svg" class="w-56 h-80 m-16 ml-16 rounded-lg shadow">
+    <!-- Section 1 -->
+    <main class="mb-96">
+        <div class="mt md:mt-4 grid grid-cols-2 gap-4 place-items-center h-56">
+            <div class="">
+                <ul class="ms-24 mb-16">
+                    <li>
+                        <a style="width: 608px; color: #0F0F0F; font-size: 72px; font-family: DM Serif Display; font-weight: 550; line-height: 82.80px; word-wrap: break-word">The Whole World Open Up To You</a>
+                    </li>
+                    <li class="mt-4">
+                        <a style="width: 608px; color: #0F0F0F; font-size: 21px; font-family: Roboto; font-weight: 400; word-wrap: break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
+                    </li>
+                </ul>
+                <ul class="ms-24">
+                    <li class="w-full h-16 flex justify-start items-center">
+                        <input 
+                            name="search"
+                            id="search"
+                            placeholder="Search Books, Authors, or Categories"
+                            class="p-6 rounded-lg border-2 bg-transparent border-yellow-700 text-neutral-600 text-base font-medium font-['Roboto']"
+                            style="width: 384px; height: 64px;"
+                        >
+                        <button class="h-16 ml-4 px-10 bg-yellow-700 rounded-lg flex justify-center items-center text-white text-xl font-normal font-['Roboto'] hover:bg-orange-400">
+                            Search
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <img style="width: 529px; height: 531px" src="Globe and Book.png">
+            </div>
         </div>
-        <div class="flex flex-col justify-center">
-            <ul>
-                <li class="mb-10 mt-24 text-white text-7xl font-medium font-serif leading-10">Bumi</li>
-                <li class="mb-10 text-white text-4xl font-normal font-['Roboto']">Tere Liye</li>
-                <li class="w-96 text-white text-xl font-normal font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li class="ml-16 text-white text-4xl font-normal font-['Roboto']">Description</li>
-                <li class="mt-2 ml-16 break-words w-96 text-white text-xl font-normal font-['Roboto']">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida risus eu dui faucibus, ac feugiat urna ultrices. Aenean ligula arcu, pulvinar non gravida quis, semper id felis.<br><br>
-                    Phasellus pellentesque elit eget ante aliquet, quis dictum velit tincidunt. Vestibulum luctus tellus ut augue cursus, eleifend laoreet urna cursus. Praesent sit amet ipsum non libero ullamcorper auctor sed a sem.
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li class="mb-2 w-28 text-white text-4xl font-normal font-['Roboto']">
-                    Editor
-                </li>
-                <li class="mb-24 w-96 text-white text-xl font-normal font-['Roboto'] break-words">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li class="mb-2 w-28 text-white text-4xl font-normal font-['Roboto']">
-                    Language
-                </li>
-                <li class="w-96 text-white text-xl font-normal font-['Roboto'] break-words">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-            </ul>
-        </div>
-    </div>
+    <!-- Section 1 ends -->
     </main>
-    <!--Section 1 Ends-->
-
+    
     <!--Section 2-->
     <main class="mt-8 mb-24 flex-auto">
         <div class="flex justify-between ml-24 mr-24 mb-16">
@@ -221,8 +214,27 @@
           </div>
     </main>
     <!--Section 2 ends-->
-    
+
     <!--Section 3-->
+    <main class="mt-8 m-24 flex-auto">
+        <div style="height: 480px;width: 1240px;" class="card flex flex-col w-96 h-96 relative bg-gradient-to-r from-orange-500 to-amber-200 rounded-2xl shadow">
+            <div>
+                <img 
+                src="Shawn Gracia.svg"
+                class="w-56 h-80 left-[843px] top-[80px] absolute rounded-lg">
+
+                <div class="flex flex-col m-16">
+                    <div class="mb-8 text-white text-4xl font-medium font-['Roboto']">Our Recommendation</div>
+                    <div class="mb-4 text-white text-5xl font-medium font-['Roboto']">Conouest Of Flame</div>
+                    <div class="mb-4 w-96 text-white text-3xl font-normal font-['Roboto']">Shawn Gracia</div>
+                    <div class="w-1/2 text-white text-xl font-normal font-['Roboto']">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Section 3 ends-->
+
+    <!--Section 4-->
     <main class="mt-8 mb-24 flex-auto">
         <div class="flex justify-between ml-24 mr-24 mb-16">
             <div class="text-stone-900 text-4xl font-medium font-['Roboto']">
@@ -345,7 +357,36 @@
             </ul>
           </div>
     </main>
-    <!--Section 3 ends-->
+    <!--Section 4 ends-->
+
+    <!--Section 5-->
+    <main class="mt-8 m-24 flex-auto">
+        <div style="height: 480px; width: 1240px;" class="card flex bg-gradient-to-r from-orange-500 to-amber-200 rounded-2xl shadow">
+            <div class="flex-none">
+                <img src="mail with a frosted glass effect.svg" class="m-24">
+            </div>
+            <div class="flex items-center justify-center flex-grow">
+                <ul>
+                    <li>
+                        <a class="text-white text-4xl font-medium font-['Roboto']">Subscribe to our blog for the latest information.</a>
+                    </li>
+                    <li class="flex items-center mt-8 gap-4">
+                        <input 
+                            name="search"
+                            id="search"
+                            placeholder="Your Email"
+                            class="w-80 h-16 p-6 rounded-lg border-2 border-yellow-700 bg-transparent text-white justify-start items-center gap-6 inline-flex"
+                        >
+                        <button class="w-60 h-16 px-14 bg-yellow-700 rounded-lg flex-col justify-center items-center inline-flex text-white text-xl font-normal font-['Roboto'] hover:bg-orange-400">
+                            Subscribe
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <!--Section 5 ends-->
 
     <!--Footer-->
     <footer>
@@ -407,5 +448,4 @@
     </footer>
     <!--Footer ends-->
 </body>
-
 </html>
