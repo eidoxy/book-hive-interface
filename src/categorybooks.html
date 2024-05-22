@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Categoriesbooks</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b  ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <ul class="flex">
+                <a class="font-bold font-sans text-2xl text-yellow-600">Book</a>
+                <a class="font-bold font-sans text-2xl text-yellow-400">Hive</a>
+            </ul>
+
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button"
+                    class="text-white bg-yellow-600 focus:outline-none rounded-md px-9 py-2.5 text-center dark:hover:bg-yellow-600 ">Login
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gra md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-600 md:p-0 md:dark:hover:text-yellow-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-600 md:p-0 md:w-auto dark:text-white md:dark:hover:text-yellow-600 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Categories
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">International
+                                        Book</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Comic</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Novel</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Education</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                    out</a>
+                            </div>
+                        </div>
+                        <!-- End Dropdown menu -->
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-600 md:p-0 md:dark:hover:text-yellow-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-600 md:p-0 md:dark:hover:text-yellow-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Tutup Navbar -->
+
+    <!-- Hero -->
+    <section class="bg-gray-50">
+        <div class="p-8 mt-6 mb-6 md:p-12 lg:px-16 lg:py-24">
+            <div class="mx-auto max-w-lg text-center">
+                <h2 class="mt-8 mb-8 font-serif font-bold text-gray-900 text-5xl">
+                    International Book
+                </h2>
+            </div>
+
+            <div class="mx-auto mt-8 max-w-xl">
+                <form action="#" class="sm:flex sm:gap-4">
+                    <div class="sm:flex-1">
+                        <label for="email" class="sr-only">Search</label>
+
+                        <input type="Search" placeholder="Search Books, Authors, or Categories"
+                            class="w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-600" />
+                    </div>
+
+                    <button type="submit"
+                        class="group mt-4 flex w-full items-center justify-center gap-2 rounded-md bg-yellow-600 px-8 py-3 text-white transition focus:outline-none focus:ring focus:ring-yellow-600 sm:mt-0 sm:w-auto">
+                        <span class="text-sm font-medium">Search</span>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Tutup Hero -->
+
+    <!-- Navbar2 -->
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="font-sans w-full flex h-16 items-center justify-between">
+            <div>
+                <a class="text-black transition hover:text-yellow-600" href="#"> Filter </a>
+            </div>
+
+            <div>
+                <a class="text-black transition hover:text-yellow-600" href="#"> Comic </a>
+            </div>
+
+            <div>
+                <a class="text-black transition hover:text-yellow-600" href="#"> Education </a>
+            </div>
+
+            <div>
+                <a class="text-black transition hover:text-yellow-600" href="#"> Journal </a>
+            </div>
+
+            <div>
+                <a class="text-black transition hover:text-yellow-600" href="#"> Novel </a>
+            </div>
+
+            <div>
+                <a class="text-black transition hover:text-yellow-600" href="#"> Subject </a>
+            </div>
+
+            <div>
+                <a class="text-black transition hover:text-yellow-600" href="#"> International Book </a>
+            </div>
+
+            <div>
+                <a class="text-black transition hover:text-ye" href="#"> Sport </a>
+            </div>
+        </div>
+    </div>
+    <!-- Tutup Navbar2 -->
+
+    <!-- Kategori 1-->
+    <div>
+        <!-- Buku 1 -->
+        <div class="flex justify-between p-14">
+            <div class="w-56 rounded-lg border h-auto">
+                <div class="p">
+                    <img src="assets/images/buku 16.png" alt="buku 1">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-3">Benjamin Graham</p>
+                    <p class="font-serif text-3xl flex justify-center">The Intelligent</p>
+                    <p class="font-serif text-3xl flex justify-center pb-2">Investor</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+        <!-- Tutup Buku 1 -->
+
+        <!-- Buku 2 -->
+            <div class=" w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 17.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">J. K. Rowling</p>
+                    <p class="font-serif text-3xl flex justify-center ">Unofficial Harry </p>
+                    <p class="font-serif text-3xl flex justify-center pb-1">Potter </p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+        <!-- Tutup Buku 2 -->
+
+        <!-- Buku 3 -->
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 18.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">Scott Cawthon</p>
+                    <p class="font-serif text-4xl flex justify-center pb-11">Rasa Sunyi</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+        <!-- Tutup Buku 3 -->
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 19.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">Brianna Wiest</p>
+                    <p class="font-serif text-3xl flex justify-center">Story of two</p>
+                    <p class="font-serif text-3xl flex justify-center pb-1">Friends</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 20.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">olivia wilson</p>
+                    <p class="font-serif text-4xl flex justify-center pb-11">Ranch</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Tutup Kategori 1 -->
+
+    <!-- Kategori 2 -->
+        <div class="flex justify-between p-14">
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 16.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">Benjamin Graham</p>
+                    <p class="font-serif text-3xl flex justify-center">The Intelligent</p>
+                    <p class="font-serif text-3xl flex justify-center pb-2">Investor</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 17.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">J. K. Rowling</p>
+                    <p class="font-serif text-3xl flex justify-center ">Unofficial Harry </p>
+                    <p class="font-serif text-3xl flex justify-center pb-1">Potter </p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 18.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">Scott Cawthon</p>
+                    <p class="font-serif text-3xl flex justify-center ">Attack On Titan</p>
+                    <p class="font-serif text-3xl flex justify-center ">28</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 19.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">Brianna Wiest</p>
+                    <p class="font-serif text-3xl flex justify-center">Detektif Conan</p>
+                    <p class="font-serif text-3xl flex justify-center">Comic Quiz 1</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 20.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">Koyomi Araragi</p>
+                    <p class="font-serif text-3xl flex justify-center">Bakemonogatari</p>
+                    <p class="font-serif text-3xl flex justify-center">14</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Tutup Kategori 2 -->
+    <!-- Kategori 3 -->
+        <div class="flex justify-between p-14">
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 16.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">Benjamin Graham</p>
+                    <p class="font-serif text-3xl flex justify-center">The Intelligent</p>
+                    <p class="font-serif text-3xl flex justify-center pb-2">Investor</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-56 rounded-lg border h-auto bg">
+                <div>
+                    <img src="assets/images/buku 17.png" alt="">
+                    <div class="border rounded-lg "></div>
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">J. K. Rowling</p>
+                    <p class="font-serif text-3xl flex justify-center ">Unofficial Harry </p>
+                    <p class="font-serif text-3xl flex justify-center pb-1">Potter </p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 18.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">Scott Cawthon</p>
+                    <p class="font-serif text-3xl flex justify-center">Novel Cantik</p>
+                    <p class="font-serif text-3xl flex justify-center pb-1">Itu Luka</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 19.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">Brianna Wiest</p>
+                    <p class="font-serif text-3xl flex justify-center">Misteri Kota</p>
+                    <p class="font-serif text-3xl flex justify-center pb-1">Tua</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 20.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">Brene Brown</p>
+                    <p class="font-serif text-4xl flex justify-center pb-9">Gifts Of</p>
+                    <p class="font-serif text-4xl flex justify-center pb-9">Imperfection:</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Tutup Kategori 3 -->
+
+    <!-- Kategori 4 -->
+        <div class="flex justify-between p-14">
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 16.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">Benjamin Graham</p>
+                    <p class="font-serif text-3xl flex justify-center">The Intelligent</p>
+                    <p class="font-serif text-3xl flex justify-center pb-2">Investor</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 17.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">J. K. Rowling</p>
+                    <p class="font-serif text-3xl flex justify-center ">Unofficial Harry </p>
+                    <p class="font-serif text-3xl flex justify-center pb-1">Potter </p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 18.png" alt="">
+                </div>
+                
+                <div>
+                    <p class="flex justify-center pb-2">Scott Cawthon</p>
+                    <p class="font-serif text-3xl flex justify-center ">Five Nights At</p>
+                    <p class="font-serif text-3xl flex justify-center pb-1">Freddy`S</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 19.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">Brianna Wiest</p>
+                    <p class="font-serif text-3xl flex justify-center ">The Mountain</p>
+                    <p class="font-serif text-3xl flex justify-center pb-1">Is You</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-56 rounded-lg border h-auto">
+                <div>
+                    <img src="assets/images/buku 20.png" alt="">
+                </div>
+                <div>
+                    <p class="flex justify-center pb-2">Brene Brown</p>
+                    <p class="font-serif text-3xl flex justify-center ">Gifts Of</p>
+                    <p class="font-serif text-3xl flex justify-center pb-1">Imperfection:</p>
+                    <div class="flex justify-between p-4 ">
+                        <p class="r">Stock</p>
+                        <p class="">Shelf</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tutup Kategori 3 -->
+    </div>
+    <!-- Kategori End -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-100">
+        <div class="mx-auto max-w-screen-xl px-1 py-3 sm:px-3 lg:px-3">
+          <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="text-center sm:text-left">
+              <p class="text-lg font-medium text-gray-900">Other Link</p>
+      
+              <ul class="mt-8 space-y-4 text-sm">
+                <li>
+                  <a class="text-gray-700 transition hover:text-gray-700/75" href="#">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Books </a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="text-center sm:text-left">
+              <p class="text-lg font-medium text-gray-900">About BookHive</p>
+      
+              <ul class="mt-8 space-y-4 text-sm">
+                <li>
+                  <a class="text-gray-700 transition hover:text-gray-700/75" href="#">
+                    About us
+                  </a>
+                </li>
+      
+                <li>
+                  <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Help </a>
+                </li>
+      
+                <li>
+                  <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Contact us </a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="text-center sm:text-left">
+      
+              <ul class="mt-8 space-y-4 text-sm">
+              </ul>
+            </div>
+            </div>
+          </div>
+          <hr class=" border-gray-400 container ml-10">
+          <div class="mt-16">
+            <ul class="flex justify-center gap-6 sm:justify-end">
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-teal-700 transition hover:text-teal-700/75"
+                >
+                  <span class="sr-only">Facebook</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <img src="assets/images/instagram.png" alt="">
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-teal-700 transition hover:text-teal-700/75"
+                >
+                  <span class="sr-only">Instagram</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <img src="assets/images/tiktok.png" alt="">
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-teal-700 transition hover:text-teal-700/75"
+                >
+                  <span class="sr-only">Twitter</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <img src="assets/images/twt.png" alt="">
+                  </svg>
+                </a>
+              </li>
+      
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-teal-700 transition hover:text-teal-700/75"
+                >
+    
+                </a>
+              </li>
+      
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-teal-700 transition hover:text-teal-700/75"
+                >
+                  <span class="sr-only">Dribbble</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <img src="assets/images/yt.png" alt="">
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class=" sm: sm:items-center sm:justify-between">
+                <div class="flex justify-center text-yellow-300 sm:justify-start">
+                </div>
+                <p class="mb-5 text-center text-sm text-gray-500 sm:mt-0 sm:text-start">
+                  © BookHive. We love our users!
+                </p>
+              </div>
+          </div>
+        </div>
+      </footer>
+    <!-- Tutup Footer -->
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
