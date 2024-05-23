@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Book Hive</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body class="bg-orange-100">
+    <!--Sidebar-->
+    <div class="flex">
+        <div class="bg-yellow-700 max-h-max w-[608px] p-5 pt-8 relative">
+            <ul>
+                <li class="flex justify-center mt-11">
+                    <span class="text-gray-100 text-4xl font-bold font-['DM Sans']">BOOK</span>
+                    <span class="text-amber-400 text-4xl font-bold font-['DM Sans']">HIVE</span> 
+                </li>
+                <li class="flex justify-center mt-4">
+                    <span class="w-[200px] h-0.5 bg-gray-100"></span>
+                </li>
+                <li href="#" class="flex justify-start ml-11 mt-11">
+                    <button class="flex items-center">
+                        <span class="w-5 h-5 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            </svg>                          
+                        </span>
+                        <span class="text-white text-xl font-normal font-['Roboto']">Profile</span>
+                    </button>
+                </li>
+                <li href="#" class="flex justify-start ml-11 mt-4">
+                    <button class="flex items-center">
+                        <span class="w-5 h-5 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                              </svg>
+                                                        
+                        </span>
+                        <span class="text-white text-xl font-normal font-['Roboto']">Borrowing Books</span>
+                    </button>
+                </li>                 
+            </ul>
+            
+        </div>
+        <!--Main-->
+        <div class="p-7 mr-24">
+            <ul class="flex my-1 justify-start items-start gap-2">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                    </svg>                    
+                </li>
+                <li class="text-3xl text-stone-900 font-['Roboto']">
+                    Notification
+                </li>
+            </ul>
+            <ul class="ml-5">
+                <li class="ml-5">
+                    <span class="text-neutral-600 text-base font-medium font-['Roboto']">
+                        You Have
+                    </span>
+                    <span class="text-yellow-700 text-base font-medium font-['Roboto']">
+                        2
+                    </span>
+                    <span class="text-neutral-600 text-base font-medium font-['Roboto']">
+                        Notification Today!
+                    </span>
+                </li>
+            </ul>
+            <!--Notif today-->
+            <ul class="mt-8 ml-5">
+                <li class="mb-4 text-neutral-600 text-xl font-normal font-['Roboto']">
+                    Today
+                </li>
+            </ul>
+            <!--box1-->
+            <ul class="ml-6 mb-2 h-28 w-full p-6 rounded-lg border-2 border-yellow-700 justify-start items-center gap-6 inline-flex">
+                <li class="flex-none">
+                    <span class="w-16 h-16 rounded-full">
+                        <img src="The Young Wizzard.svg">
+                    </span>
+                </li>
+                <li>
+                    <span class="text-black text-xl font-normal font-['Roboto']">The Young Wizzard</span>
+                    <span class="text-neutral-600 text-xs font-normal font-['Roboto']">1hr Ago</span>
+                    <span class="block"></span>
+                    <span class="text-neutral-600 text-base font-medium font-['Roboto']">Deadline for returning your book is</span>
+                    <span class="text-amber-400 text-base font-medium font-['Roboto']"> Tomorrow</span>
+                </li>
+                <button href="#" class="w-[416px] text-right text-yellow-700 text-base font-medium font-['Roboto'] hover:text-gray-700">
+                    View
+                </button>
+            </ul>
+            <!--box2-->
+            <ul class="ml-6 mb-2 h-28 w-full p-6 rounded-lg border-2 border-yellow-700 justify-start items-center gap-6 inline-flex">
+                <li class="flex-none">
+                    <span class="w-16 h-16 rounded-full">
+                        <img src="Ellipse 2.svg">
+                    </span>
+                </li>
+                <li>
+                    <span>The Young Wizzard</span>
+                    <span>1hr Ago</span>
+                    <span class="block"></span>
+                    <span class="text-neutral-600 text-base font-medium font-['Roboto']">Thankyou, You have</span>
+                    <span class="text-lime-500 text-base font-medium font-['Roboto']"> Returned</span>
+                    <span class="text-neutral-600 text-base font-medium font-['Roboto']">this book today</span>
+                </li>
+                <button href="#" class="w-[416px] text-right text-yellow-700 text-base font-medium font-['Roboto'] hover:text-gray-700">
+                    View
+                </button>
+            </ul>
+            <!--Notif yesterday-->
+            <ul class="mt-8 ml-5">
+                <li class="mb-4 text-neutral-600 text-xl font-normal font-['Roboto']">
+                    Yesterday
+                </li>
+            </ul>
+            <!--box1-->
+            <ul class="ml-6 mb-2 h-28 p-6 w-full rounded-lg border-2 border-yellow-700 justify-start items-center gap-6 inline-flex">
+                <li class="flex-none">
+                    <span class="w-16 h-16 rounded-full">
+                        <img src="Ellipse 3.svg">
+                    </span>
+                </li>
+                <li>
+                    <span>The Young Wizzard</span>
+                    <span>1hr Ago</span>
+                    <span class="block"></span>
+                    <span class="text-neutral-600 text-base font-medium font-['Roboto']">Thankyou, You have</span>
+                    <span class="text-lime-500 text-base font-medium font-['Roboto']"> Returned</span>
+                    <span class="text-neutral-600 text-base font-medium font-['Roboto']"> this book yesterday</span>
+                </li>
+                <button href="#" class="w-96 text-right text-yellow-700 text-base font-medium font-['Roboto'] hover:text-gray-700">
+                    View
+                </button>
+            </ul>
+            <!--box2-->
+            <ul class="ml-6 mb-2 h-28 p-6 w-full rounded-lg border-2 border-yellow-700 justify-start items-center gap-6 inline-flex">
+                <li class="flex-none">
+                    <span class="w-16 h-16 rounded-full">
+                        <img src="Ellipse 4.svg">
+                    </span>
+                </li>
+                <li>
+                    <span>The Young Wizzard</span>
+                    <span>1hr Ago</span>
+                    <span class="block"></span>
+                    <span class="text-neutral-600 text-base font-medium font-['Roboto']">Thankyou, You have</span>
+                    <span class="text-lime-500 text-base font-medium font-['Roboto']"> Returned</span>
+                    <span class="text-neutral-600 text-base font-medium font-['Roboto']"> this book yesterday</span>
+                </li>
+                <button href="#" class="w-96 text-right text-yellow-700 text-base font-medium font-['Roboto'] hover:text-gray-700">
+                    View
+                </button>
+            </ul>
+            <!--Notif 17 may-->
+            <ul class="mt-8 ml-5">
+                <li class="mb-4 text-neutral-600 text-xl font-normal font-['Roboto']">
+                    17 May
+                </li>
+            </ul>
+            <!--box1-->
+            <ul class="ml-6 mb-2 h-28 p-6 w-full rounded-lg border-2 border-yellow-700 justify-start items-center gap-6 inline-flex">
+                <li class="flex-none">
+                    <span class="w-16 h-16 rounded-full">
+                        <img src="Ellipse 5.png">
+                    </span>
+                </li>
+                <li>
+                    <span>The Young Wizzard</span>
+                    <span>1hr Ago</span>
+                    <span class="block"></span>
+                    <span class="text-neutral-600 text-base font-medium font-['Roboto']">Thankyou, You have</span>
+                    <span class="text-lime-500 text-base font-medium font-['Roboto']"> Returned</span>
+                    <span class="text-neutral-600 text-base font-medium font-['Roboto']"> this book on 17 May</span>
+                </li>
+                <button href="#" class="w-96 text-right text-yellow-700 text-base font-medium font-['Roboto'] hover:text-gray-700">
+                    View
+                </button>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
