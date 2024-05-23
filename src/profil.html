@@ -1,29 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>BookHive</title>
-</head>
-<body>
-    <div class="grid grid-cols-2 bg-black w-full h-screen">
-        <div class="bg-white">
-          <div class="flex text-center items-center h-screen w-full">
-            <h1 class="">Login</h1>
-            <h1>Welcome to BookHive</>
-            <h1>Parent Number</h1>
-            <div class="sm:flex-1">
-              <label for="email" class="sr-only">Search</label>
 
-              <input type="Search" placeholder="Search Books, Authors, or Categories"
-                  class="w-auto rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-600" />
-          </div>
-          </div>
-        </div>
-        <div class="bg-slate-600 w-full h-ful">
-          
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>BookHive</title>
+</head>
+
+<body class="bg-orange-100">
+  <!--Sidebar-->
+  <div class="flex">
+    <div class="bg-yellow-700 max-h-max w-[354px] p-5 pt-8 relative">
+      <ul>
+        <li class="flex justify-center mt-11">
+          <span class="text-gray-100 text-4xl font-bold font-['DM Sans']">BOOK</span>
+          <span class="text-amber-400 text-4xl font-bold font-['DM Sans']">HIVE</span>
+        </li>
+        <li class="flex justify-center mt-4">
+          <span class="w-[200px] h-0.5 bg-gray-100"></span>
+        </li>
+        <li href="#" class="flex justify-start ml-11 mt-11">
+          <button class="flex items-center">
+            <span class="w-5 h-5 mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              </svg>
+            </span>
+            <span class="text-white text-xl font-normal font-['Roboto']">Profile</span>
+          </button>
+        </li>
+        <li href="#" class="flex justify-start ml-11 mt-4">
+          <button class="flex items-center">
+            <span class="w-5 h-5 mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-5 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+              </svg>
+
+            </span>
+            <span class="text-white text-xl font-normal font-['Roboto']">Borrowing Books</span>
+          </button>
+        </li>
+    
+
     </div>
+    <!--Main-->
+    <div class="scroll-mx-px container justify-center">
+      <!--box1-->
+      <div class="flex justify-center">
+        <div class="mb-24 mt-24 w-[650px] h-[875px] bg-white rounded-2xl shadow">
+          <div>
+            <div>
+              <div class="m-4 mb-2 text-stone-900 text-xl font-normal font-['Roboto']">
+                Personal Information
+              </div>
+              <div class="flex justify-center">
+                <p class="w-[585px] h-0.5 bg-orange-200"></p>
+              </div>
+              <div class="flex justify-center">
+                <div>
+                  <img src="assets/images/Profil.png" alt="">
+                  <div class="flex justify-center font-medium mb-11">
+                    <a class="text-red-400 "href="#">Delete </a>
+                    <a class="text-lime-500 "href="#" >Change</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="m-11 mt-2">
+              <div class="">
+                <div class="">
+                  <div class="flex justify-between mx-auto">
+                    <div>
+                      <label class="text-lg font-medium font-['Roboto']">Name</label>
+                    <input type="Name" placeholder="Name"
+                        class="mb-11 w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-700" />
+                    </div>
+                        <div>
+                          <label class="border-yellow-70 font-['Roboto']">Phone Number</label>
+                          <input type="" placeholder="+62"
+                              class="mb-11 w-full rounded-md border-gray-300 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-700" />
+                        </div>
+                  </div>
+
+                  <div>
+                    <label class="font-['Roboto']">Email</label>
+                    <input type="Email" placeholder="Email"
+                        class="mb-11 w-full rounded-md border-gray-300 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-700" />
+                  </div>
+                  <div>
+                    <label class="font-['Roboto']">Biodata</label>
+                    <input type="biodata" placeholder="Edit your bio"
+                        class="mb-11 w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-700" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 </body>
+
 </html>
